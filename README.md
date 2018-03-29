@@ -3,7 +3,7 @@
 
 ## Vim
 
-- Editor de texto Vim e sua manipulação
+- Editor de texto Vim.
     
 
 
