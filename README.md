@@ -1,49 +1,47 @@
 # O que eu sei
 
 
-## Vim
+### Vim
 
-- Editor de texto.
-    
+O Vim é um forte editor de texto. Umas das suas maiores vantagens se encontra na sua composição. 
+Vários comandos podem ser somados e dar ao desenvolvedor uma extensa lista de combinações.
 
 
 ## Python
 
 ### Str
-    
-    Uma string é uma sequencia de caracter, e caracter é a menor parcela de um texto. 
-    Em python, todo caracter entra em formato de str. Para escrevermos outras
-    informações que não seja em formato de string, devemos 'converte-los' ou especificar
-    em que formato queremos que aquela informação seja processada. Para isso usamos algumas
-    das funções que o python nos fornece para essa interpretação.
+
+Em python, uma entrada pode ser feita de algumas formas diferentes. Falando especificamente de Str, 
+esse que é uma sequencia de caractere, ou menor parcela de um texto. 
+Usualmente, fazemos uma entrada em formato de str e caso seja conveniente a convertemos para outra forma.
 
 ### Int
 
-    Int, ou inteiro é uma das funções usadas por string. Essa função faz com que a informação ou caracter
-    seja interpretado como um número, e em formato de inteiro. Lembrando que essa função não arredonda numeros,
-    faz somente a leitura do primeiro algarismo presente.
+O int é uma classe usada para converter uma entrada em inteiro. Usamos o seu construtor para isso `int()`.
+Lembrando que essa função não arredonda numeros, faz somente a leitura dos dois primeiros algarismos presente.
 
 ### Float
 
-    O float, também conhecido como ponto flutuante, assim como o int, é uma outra função das strings. 
-    Float é o que nos permite visualizar algarismos em sua forma decimal ou em sua forma de frações. 
+O float, também conhecido como ponto flutuante, assim como o int, é uma classe que usa o construtor `float()`
+e converte a sua entrada para uma forma decimal ou fracionada.
 
 ### Variaveis
 
-    O que chamamos de variáveis, são locais de memória usados para armazenar 'valores'.
-    Com base nos tipos de dados que estamos trabalhando, esses valores armazenados podem ser números do tipo Inteiro,
-    decimais ou caracteres.
-    Não é necessário uma complexa ferramenta na hora de fazer essas atribuições, usamos apenas o sinal de  '=',
-    que no caso lemos como 'atribuição' ou 'recebe'.
+O que chamamos de variáveis, são locais de memória usados para armazenar 'valores'.
+Com base nos tipos de dados que estamos trabalhando, esses valores armazenados podem ser números do tipo 
+Inteiro, decimais ou caracteres.
+Não é necessário uma complexa ferramenta na hora de fazer essas atribuições, usamos apenas o sinal de  '=',
+que no caso lemos como 'atribuição' ou 'recebe'.
 
 ### Func
 
-    Func, é como conhecemos as funções em python. Uma função, possui uma 'syntax' definida como:
+Func, é como conhecemos as funções em python. Uma função, possui uma 'syntax' definida como:
             
             def nome_da_função(argumentos):
                 .....
     
-    Uma função é um bloco de código usado para realizar uma ação. facilitando suas ações e reutilizando códigos.
+Uma função é um bloco de código usado para realizar uma ação, reutilizando esses códigos de forma reduzida.
+excluindo a necessidade de reescrever todo o bloco a cada uso.
 
 ### if, elif, else
 ### while
@@ -73,9 +71,10 @@
 
 ### git .ignore
 
-    O git possui essa forma para que possamos inseir arquivos que queremos ignorar.
+    O git possui essa forma para que possamos inserir arquivos que queremos ignorar.
     Fazemos isso para não commitarmos os nossos arquivos por acidente e também por comodidade,
     para que os arquivos não fiquem sendo listados o tempo todo como 'untracked'.
+
 ### git status
 
     Git status é o comando que usamos para nos orientar.
@@ -83,12 +82,12 @@
 
 ### git add
 
-    git add, comando usado para enviar nossos arquivos que foram criados ou modificados para a stage area.
+    Git add, comando usado para enviar nossos arquivos que foram criados ou modificados para a stage area.
     A partir do momento que fazemos esse comando, o git passa a monitora-lo e já se cria um chamado blob.
 
 ### git commit
 
-    'commitar' um arquivo, é envia-lo para a nossa área de repositório.
+    'Commitar' um arquivo, é envia-lo para a nossa área de repositório.
 
 ### git log <git log oneline>
 
@@ -101,4 +100,24 @@
 ### git diff
 
     O comando dif, é usado para nos orientarmos das mudanças feitas em cada arquivo.
-    Usado com variações, para nos atualizarmos dessas mudanças em variadas formas de apresentação.
+    Somado com o dif, podemos usar outras combinações para as modificações serem apresentadas
+    de várias formas diferentes.
+
+### git branch
+
+    Fazer um git branch é criar uma nova linha de desenvolvimento.
+    Criar novas linhas de desenvolvimento é relevante, pois projetos podem avançar em diferentes caminhos
+    e futuramente serem unidos, evitando assim, que o seu código fique parado por muito tempo em um único ponto.
+    Usar o comando git branch, nos permite também, ver quantos 'branch' temos ali registrados.
+
+### git checkout
+
+    Podemos possuir diferentes linhas de deselvovimento, que chamamos de brach. ``Git checkout`` nos permite
+    fazer a troca desses branch.
+
+### git merge:
+
+    O comando merge provavelmente é uma das funções mais importantes dentro do git.
+    Fazer um merge é atualizar seus commits, juntar as modificações de cada branch
+    tornando o arquivo um só. Juntando as suas alterações em apenas uma 'tree'.
+
