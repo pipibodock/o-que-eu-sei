@@ -35,9 +35,11 @@ Relacionamentos podem ter tipos, conhecidos como __cardinalidade__:
 Necessariamente uma entidade se relaciona diretamente com apenas 1 outra entidade. ex.( cada pessoa só coloca apenas 1 curriculum em um banco de dados de registro. Ou seja existe apenas  1 curriculum para 1 pessoa ou 1 pessoa para 1 curriculum)
 
 #### 1..n  
+
 Temos aqui uma relação de 1 para vários. A entidade Alunos e a entidade veículo. Em uma auto escola, a relação entre os alunos para o veículo é  de 1 para vários.  1 carro é para vários alunos. Vários alunos são para 1 carro de aprendizagem.
 
 #### n..n 
+
 Ligação de vários para vários, existem várias entidades de um mesmo tipo que se relaciona para várias entidades de outro tipo. Como uma          entidade ‘produto’ podem ser vendidos para vários clientes e vários clientes podem comprar vários produtos.
 
 ## ATRIBUTOS
