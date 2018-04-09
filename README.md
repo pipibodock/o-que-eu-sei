@@ -6,6 +6,12 @@
 O Vim é um forte editor de texto. Umas das suas maiores vantagens se encontra na sua composição. 
 Vários comandos podem ser somados e dar ao desenvolvedor uma extensa lista de combinações.
 
+## Diagrama de Entidade - Relacionamento
+
+[Modelo de Entidade e Relacionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Modelo_Entidade_Relacionamento) é o abstrato do Diagrama.
+Explicação das funções de cada elemento e como devem ser organizados dentro do diagrama.
+
+
 
 ## Python
 
