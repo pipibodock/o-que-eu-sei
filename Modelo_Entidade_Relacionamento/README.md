@@ -14,15 +14,15 @@ Entidades são representadas no diagrama como forma de retângulo e normalmente 
 
 Entidades pode ser uma entidade sozinha ou podemos dizer em conjuntos de entidades. Essas entidades podem ser classificadas como:.
 
-### FORTES 
+#### FORTES 
 
 São aquelas que não dependem de outra entidade. Ela existe por si só. Pode possuir um ou mais atributo.
 
-### FRACAS 
+##### FRACAS 
 
 São aquelas que dependem de outras entidades para existir. Ela por sí só em um diagrama não faz sentido.
 
-### ASSOCIATIVAS 
+#### ASSOCIATIVAS 
 
 São aquelas criadas para uma se relacionar no produto de uma entidade com um relacionamento. As entidades associativas, podem ser vistas como vias de mão dupla, onde está ligada tanto a entidade quanto ao relacionamento.
 
@@ -35,14 +35,16 @@ Relacionamentos é a forma como uma entidade se ‘relaciona’ , ou como estão
 
 Relacionamentos podem ter tipos, conhecidos como __cardinalidade__:
 
-### 1..1 
+#### 1..1 
 
 Necessariamente uma entidade se relaciona diretamente com apenas 1 outra entidade. ex.( cada pessoa só coloca apenas 1 curriculum em um banco de dados de registro. Ou seja existe apenas  1 curriculum para 1 pessoa ou 1 pessoa para 1 curriculum)
 
-### 1..n  
+#### 1..n  
+
 Temos aqui uma relação de 1 para vários. A entidade Alunos e a entidade veículo. Em uma auto escola, a relação entre os alunos para o veículo é  de 1 para vários.  1 carro é para vários alunos. Vários alunos são para 1 carro de aprendizagem.
 
-### n..n 
+#### n..n 
+
 Ligação de vários para vários, existem várias entidades de um mesmo tipo que se relaciona para várias entidades de outro tipo. Como uma          entidade ‘produto’ podem ser vendidos para vários clientes e vários clientes podem comprar vários produtos.
 
 ## ATRIBUTOS
@@ -56,22 +58,22 @@ para ser usado em um supermercado.
 
 Assim, os atributos mais relevantes passariam a ser o seu nome, seu endereço ou o seu cpf.
 
-### Atributos Descritivos ou Nominativos:
+#### Atributos Descritivos ou Nominativos:
 
-#### Descritivos
+##### Descritivos
 
 São aqueles que descrevem a entidade propriamente dita, como nome e cor.
 
-#### Nominativos 
+##### Nominativos 
 
 São os atributos construidos, como números de matŕiculas para uma entidade.
 
-### Composição - Atributos simples ou compostos:
+#### Composição - Atributos simples ou compostos:
 
-#### Simples 
+##### Simples 
 
 Quando a descrição por ela só já é suficiente, por exemplo o nome.
 
-#### composta 
+##### composta 
 
 Quando um atributo é composto por outros informações. Por exemplo, o endereço, que se compoe por rua, bairro, número e etc.
