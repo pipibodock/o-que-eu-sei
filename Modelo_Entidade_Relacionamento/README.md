@@ -10,7 +10,7 @@ A importância de se fazer um diagrama se da na necessidade que temos de constru
 
 Entidades são representadas no diagrama como forma de retângulo e normalmente descrita por um substantivo.
 
-![alt text](https://postimg.org/image/5memrlbez://github.com/pipibodock/o-que-eu-sei/blob/master/Imagens/1f1183cc7f618d80b61bd57ae81e994b.png)
+![alt text](https://github.com/pipibodock/o-que-eu-sei/blob/master/Imagens/1f1183cc7f618d80b61bd57ae81e994b.png)
 
 Entidades pode ser uma entidade sozinha ou podemos dizer em conjuntos de entidades. Essas entidades podem ser classificadas como:.
 
@@ -31,7 +31,7 @@ São aquelas criadas para uma se relacionar no produto de uma entidade com um re
 
 Relacionamentos é a forma como uma entidade se ‘relaciona’ , ou como estão ligadas, ou como atuam uma com a outra. Podemos representar esses     relacionamentos em um diagrama como uma elipse e descreve-la como um verbo.
 
-![alt text](https://postimg.org/image/llxaaycjv://github.com/pipibodock/o-que-eu-sei/blob/master/Imagens/imagens-losango-15.gif)
+![alt text](https://github.com/pipibodock/o-que-eu-sei/blob/master/Imagens/imagens-losango-15.gif)
 
 Relacionamentos podem ter tipos, conhecidos como __cardinalidade__:
 
