@@ -1,8 +1,8 @@
 # Banco de Dados (Postgresql)
 
-# Tipo de dados (Data Type) Sql server.
+### Tipo de dados (Data Type) Sql server.
 
-### As categorias dos tipos de dados podem ser:
+#### As categorias dos tipos de dados podem ser:
 
 . número exato                             .  cadeias de caracteres unicode
 
@@ -58,7 +58,7 @@ Como o próprio título já nos deixa claro, aqui estão listados os principais 
 
 . CREATE TABLE – Usamos o ‘create table’ para criarmos as nossas novas tabelas. Juntos desse comando devemos colocar o nome da nossa tabela e todas as informações para montarmos as nossas colunas, o que inclui nesse momento definirmos o ‘data type’ de cada campo.
 
-    	CREATE TABLE nome_tabela ( coluna1 datatype, coluna2 datatype… PRIMARY                    	KEY(coluna1) );
+    	CREATE TABLE nome_tabela ( coluna1 datatype, coluna2 datatype… PRIMARY KEY(coluna1) );
 
 . \d – Comando usado para listar as tabelas existentes.
 
