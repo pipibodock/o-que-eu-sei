@@ -3,8 +3,7 @@
 
 ### Vim
 
-O Vim é um forte editor de texto. Umas das suas maiores vantagens se encontra na sua composição. 
-Vários comandos podem ser somados e dar ao desenvolvedor uma extensa lista de combinações.
+[Vim - editor de texto](https://github.com/pipibodock/o-que-eu-sei/tree/master/Editor_de_texto_Vim) Descrição do Vim e Vimrc.
 
 ## Diagrama de Entidade - Relacionamento
 
