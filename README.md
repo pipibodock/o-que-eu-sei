@@ -1,7 +1,7 @@
 # O que eu sei
 
 
-### Vim
+## Vim
 
 [Vim - editor de texto](https://github.com/pipibodock/o-que-eu-sei/tree/master/Editor_de_texto_Vim) Descrição do Vim e Vimrc.
 
