@@ -1,0 +1,62 @@
+set number
+set shell=bash
+set wildmenu                    " shows menu when tab is pressed
+set wildignore=*/htmlcov/*,*/functional*,*.swp,*.bak,*.pyc,*.class,*/node_modules/*
+set title                       " change the terminal's title
+set cursorline                  " Highline the current line
+set cc=80
+set encoding=utf8
+
+" Swap implementations of ` and ' jump to markers
+" By default, ' jumps to the marked line, ` jumps to the marked line and
+" column, so swap them
+nnoremap ' `
+nnoremap ` '
+
+" Use shift-H and shift-L for move to beginning/end
+nnoremap H 0
+nnoremap L $
+" Uses tab and shift+tab to change tabs
+map <Tab> :tabnext<cr>
+map <S-Tab> :tabprevious<cr>
+" Misc
+set directory=/tmp
+set exrc
+set secure
+set expandtab           " Tab inteligentes
+set autoindent          " Auto ident after LB
+set shiftwidth=4
+set shiftround
+set tabstop=4
+set softtabstop=4
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase           "If has uppercase chars search for inogres ignnorecase
+set backspace=indent,eol,start
+set completeopt=longest,menuone
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <C-c> <Esc><Esc>
+map 0 ^
+set splitright
+set splitbelow
+set laststatus=2
+set mouse=a
+set report=0
+" Disable arrow movement, resize splits instead.
+nnoremap <Up>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+"collors and Themes
+syntax on
+filetype plugin indent on
+syntax enable
+" Fix text background color
+hi Normal ctermbg=NONE
+
+" configurando Tema solarized "
+set background=dark
+let g:solarized_termcolors=256
+set t_Co=256
+colorscheme solarized
