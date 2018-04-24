@@ -97,3 +97,60 @@ Mas as principais mudanças e as que mais chamam a atenção é a grande compati
 correção automática de erros, foco em aplicação em alta escala, melhor suporte a criptografia e outros.
 
 ### unix:
+
+#### Ext(Ext2, Ext3, Ext4 - Extended file system)
+
+Os sistemas Ext, e toda a sua linha foram criados especificamente para o SO do Linux.
+O Ext foi um melhoramento do sistema minix e foi implatado em 1992.
+
+O Ext2, veio com melhorias em seus atributos na questão de espaço suportado, mas nada além disso.
+
+O Ext3 foi o sistema mais usado por padrão no linux. A sua maior modificação é o suporte ao 'Journaling'.
+O Ext3, é basicamente o Ext2 com acesso a esse suporte.
+
+Ext4 desde 2010 é usado como padrão do sistema linux. Além de apresentar o recurso 'Journaling', permite maiores volumes
+de arquivos com blocos de 4k, e funções novas como a 'extents', 'Multiblock allocation', 'Delayed allocation' entre outras.
+Essas novas funções são inovadoras e mudam a forma como trabalha um sistema de arquivos. A função Extents, é responsável por
+diminuir a fragmentação do disco, pois quando se trabalha com arquivos muito grandes, ao inves de colocar tudo em blocos
+de 4k, ela consegue separar espaços maiores para essa alocação.
+O Multiblock allocation é uma melhoria significativa também. Antes, até mesmo no Ext3, os blocos para serem gravados
+eram feitos 1 de cada vez. Em arquivos grandes, quando alocavamos blocos de 4k, o alocador poderia ser chamado várias
+vezes até terminr um único arquivo. O Multiblock permite que Vários blocos sejam alocados de uma única vez, ganhando em
+desempenho e outras questões.
+E por fim entre as várias melhorias, o Delayed allocation, sua tradução seria atraso de alocação.
+Ao contrário de outros sistemas de arquivo que alocam rapidamente os arquivos em blocos
+
+#### Btrfs (B-tree file System)
+
+O Btrs começou a ser desenvolvido em 2007 e foi dado como estável no ano de 2014, inicialmente desenvolvido pela
+Oracle. Foi projetado para ser capaz de lidar não só com armazenamento mas principalmente para conseguir administra-lo
+de forma eficiente.
+O btr se baseia na função de 'copy-on-write'(cow) e além disso pode suportar os chamados 'snapshots', clonagem de arquivos,
+compactação transparente, desfragmentação online e suporte para raid0, 1, 5, 6 e 10.
+
+A chamada função de cópia em gravação (cow) é onde ele mantém a cópia de um bit de dados antes que ele tenha sido escrito,
+quando esses dados forem escritos, uma cópia dele será feita. Quando um arquivo é copiado e não modificado eles compartilham
+recursos, reduzindo o consumo para cópias não modificadas.
+O snapshots é como uma 'restauração do sistema' usado no Linux. Porém existem algumas diferenças porque não é feito um
+backup, onde esse guarda em um espaço secundário suas pastas do sistema. No snap são criados em pontos específicos do tempo
+um estado de como está o seu sistema e guardado no mesmo dispositivo de armazenamento. A grande vantagem é na economia
+do disco e na agilidade pra executar uma reversão, porém passam a ficar vuneráveis a falhas.
+
+#### ZFS (Zettabyte File System)
+
+O zfs é um sistema de arquivo projetado pela Sun Microsystem hoje registrada pela marca Oracle.
+O zfs é um sistema de arquivo que está a frente do seu tempo, possui várias funções como o copy-on-write.
+Porém, com técnicas inovadoras o principal foco do Zfs é a integridade dos dados, 
+onde cada dado tem o valor do seu bloco somado  e gravado no ponteiro do bloco e não no bloco propriamente.
+
+### iOS
+#### APFS (Apple File System)
+
+O mais novo sistema de arquivo da Apple. Foi criado para ser trabalhado e compartilhado em diferentes
+plataformas (iOS, macOS, tvOS e watchOS). O ultimo sistema de arquivo usado pela Apple era o HFS+ criado em
+1998, claro que modificado durante todo esse tempo, mas não preparado para o futuro.
+
+O Apfs nasce suportado por todas as suas plataformas, com foco na segurança, com criptografia e aposta muito na velocidade 
+do seu sistema de arquivos, algo inovador do seu sistema é a possibilidade de criação automática de containers quando
+o seu disco se encontra cheio. Em comparação com outros sistemas já disponíveis para outros sistemas operacionais
+ela se encontra dentro dos padrões e não carrega nada muito inovador.
