@@ -7,11 +7,11 @@ materiais ou documentos em forma alfabética.
 
 Os objetivos dessa 'arrumação' podem ser:
 
-. Facilidade de localização.
-. Melhor distribuição de espaço.
-. Agilidade para movimentação.
-. Acesso restrito - segurança.
-. Diminuição de risco para perdas ou Danos.
+- Facilidade de localização.
+- Melhor distribuição de espaço.
+- Agilidade para movimentação.
+- Acesso restrito - segurança.
+- Diminuição de risco para perdas ou Danos.
 
 Além de outros, que variam de caso para caso.
 
