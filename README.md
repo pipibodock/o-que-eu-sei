@@ -5,6 +5,11 @@
 
 [Vim - editor de texto](https://github.com/pipibodock/o-que-eu-sei/tree/master/Editor_de_texto_Vim) Descrição do Vim e Vimrc.
 
+## FileSystem
+
+[FileSystem - Sistema de arquivo](https://github.com/pipibodock/o-que-eu-sei/tree/master/FileSystem) são diferentes sistemas
+de organização usados por diferentes sistemas operacionais, cada um com seus pontos fortes e fracos.
+
 ## Diagrama de Entidade - Relacionamento
 
 [Modelo de Entidade e Relacionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Modelo_Entidade_Relacionamento) é o abstrato do Diagrama.
