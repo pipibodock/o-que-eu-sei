@@ -19,6 +19,11 @@ Explicação das funções de cada elemento e como devem ser organizados dentro 
 
 [Postgres e suas funcionalidades](https://github.com/pipibodock/o-que-eu-sei/tree/master/Postgresql_Funcionalidades) é mais um conteúdo gerado pela rotina de estudos. Dessa vez estudamos sobre Banco de dados, Datatypes e os principais comandos para usa-lo no dia a dia.
 
+## Git - Sistema de Versionamento
+
+[Git - Sistema de versionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Git) aqui é mais uma descrição de uma forte ferramenta
+usada para o controle de versão e seus principais comandos.
+
 ## Python
 
 ### Str
@@ -91,75 +96,3 @@ Os dicionários em python é um tipo de sequência que associa objeto. Dfinida p
 Criar uma class, ou objeto classe é compor esse objeto com atributos e métodos. atributos é como são conhecidos as variáveis dentro de uma classee métodos é como são chamadas as funções quando estão dentro de uma classe.
 
 Por convenção, usamos o parâmetro 'self' como obrigatório dentro dos metodos de uma classe.
-
-## Git
-
-### git init
-    
-Cria um repositório vazio dentro da pasta que você escolher. 
-Uma pasta nomeada como `.git`.
-Essa pasta que iniciamos o git, nao precisa estar vazia, ela pode conter arquivos ou não.
-
-### areas do git    
-    
-O git trabalha com o conceito de 3 áreas diferentes. work área, stage área, repository area.
-O work área, nada mais é do que a sua pasta local. ou simplismente a sua partição, em que
-você realiza todas as mudanças ou criação de arquivo.
-
-A stage área, também chamada de index, podemos entende-la como um container.
-Nessa ficam previamente monitoradas as mudanças que fazemos.
-
-A terceira área é a qual o git armazena as suas informações, cada qual com suas tags.
-
-### git .ignore
-
-O git possui essa forma para que possamos inserir arquivos que queremos ignorar.
-Fazemos isso para não commitarmos os nossos arquivos por acidente e também por comodidade,
-para que os arquivos não fiquem sendo listados o tempo todo como 'untracked'.
-
-### git status
-
-Git status é o comando que usamos para nos orientar.
-Nesse comando que nos atualizamos e sabemos de fato, em qual área do git se encontra o nosso arquivo.
-
-### git add
-
-Git add, comando usado para enviar nossos arquivos que foram criados ou modificados para a stage area.
-A partir do momento que fazemos esse comando, o git passa a monitora-lo e já se cria um chamado blob.
-
-### git commit
-
-'Commitar' um arquivo, é envia-lo para a nossa área de repositório.
-
-### git log
-
-O git log é o comando responsavel por mostrar os commit's feitos.
-Neste comando, vem a descrição de usuário, data e mensagens usadas para descrição do arquivo.
-
-Temos também uma variação do git log, que é chamado de git log oneline.
-Este comando organiza os nossos logs em forma de lista, facilitando a visualização.
-
-### git diff
-
-O comando dif, é usado para nos orientarmos das mudanças feitas em cada arquivo.
-Somado com o dif, podemos usar outras combinações para as modificações serem apresentadas
-de várias formas diferentes.
-
-### git branch
-
-Fazer um git branch é criar uma nova linha de desenvolvimento.
-Criar novas linhas de desenvolvimento é relevante, pois projetos podem avançar em diferentes caminhos
-e futuramente serem unidos, evitando assim, que o seu código fique parado por muito tempo em um único ponto.
-Usar o comando git branch, nos permite também, ver quantos 'branch' temos ali registrados.
-
-### git checkout
-
-Podemos possuir diferentes linhas de deselvovimento, que chamamos de brach. ``Git checkout`` nos permite
-fazer a troca desses branch.
-
-### git merge:
-
-O comando merge provavelmente é uma das funções mais importantes dentro do git.
-Fazer um merge é atualizar seus commits, juntar as modificações de cada branch
-tornando o arquivo um só. Juntando as suas alterações em apenas uma 'tree'.
-
