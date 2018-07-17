@@ -16,14 +16,23 @@ de organização usados por diferentes sistemas operacionais, cada um com seus p
 
 ## Diagrama de Entidade - Relacionamento
 
-[Modelo de Entidade e Relacionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Modelo_Entidade_Relacionamento) é o abstrato do Diagrama.
+[Modelo de Entidade e Relacionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Modelo_Entidade_Relacionamento) é o
+a bstrato do Diagrama.
 Explicação das funções de cada elemento e como devem ser organizados dentro do diagrama.
 
 ## Banco de Dados - Postgresql
 
-[Postgres e suas funcionalidades](https://github.com/pipibodock/o-que-eu-sei/tree/master/Postgresql_Funcionalidades) é mais um conteúdo gerado pela rotina de estudos. Dessa vez estudamos sobre Banco de dados, Datatypes e os principais comandos para usa-lo no dia a dia.
+[Postgres e suas funcionalidades](https://github.com/pipibodock/o-que-eu-sei/tree/master/Postgresql_Funcionalidades) é mais um
+conteúdo gerado pela rotina de estudos. Dessa vez estudamos sobre Banco de dados, Datatypes e os principais comandos para usa-lo
+no dia a dia.
 
 ## Git - Sistema de Versionamento
 
-[Git - Sistema de versionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Git) aqui é mais uma descrição de uma forte ferramenta
-usada para o controle de versão e seus principais comandos.
+[Git - Sistema de versionamento](https://github.com/pipibodock/o-que-eu-sei/tree/master/Git) aqui é mais uma descrição de uma
+forte ferramenta usada para o controle de versão e seus principais comandos.
+
+## Possíveis caminhos em Tecnologia
+
+[Alguns caminhos de um profissional](https://github.com/pipibodock/o-que-eu-sei/tree/master/profissoes) aqui estão algumas
+profissões e suas principais ferramentas de trabalho na área de TI e Desenvolvimento, com o intuito de clarear um pouco
+mais os caminhos dos recém chegados.
