@@ -33,6 +33,6 @@ forte ferramenta usada para o controle de versão e seus principais comandos.
 
 ## Possíveis caminhos em Tecnologia
 
-[Alguns caminhos de um profissional](https://github.com/pipibodock/o-que-eu-sei/tree/master/profissoes) aqui estão algumas
+[Alguns caminhos de um profissional](https://github.com/pipibodock/o-que-eu-sei/tree/master/Profissoes) aqui estão algumas
 profissões e suas principais ferramentas de trabalho na área de TI e Desenvolvimento, com o intuito de clarear um pouco
 mais os caminhos dos recém chegados.
