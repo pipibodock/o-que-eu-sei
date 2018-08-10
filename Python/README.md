@@ -1,5 +1,13 @@
 ## Python
 
+### O que é Python?
+
+### Estrutura de Seleção
+
+### Estrutura de Repetição
+
+### Tipos de Dados
+
 ### Str
 
 Em python, uma entrada pode ser feita de algumas formas diferentes. Falando especificamente de Str,
