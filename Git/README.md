@@ -47,7 +47,13 @@ O git stash é mais uma das áreas do git, podendo ser traduzida ao pé da letra
 Esse espaço do git, não entra no fluxo 'normal' do trabalho, mas também pode ser usado, caso estejamos trabalhando
 em algum arquivo e apareça a necessidade de mudar o foco do trabalho, não é necessário fazer um commit de algo
 que esteja incompleto, podemos levar um arquivo que já esteja na index área e retornarmos a ele depois.
-Os comandos básicos aqui são `git stash` e `git stash list`.
+Os comandos básicos aqui são `git stash` para colocar seus arquivos nessa área  e `git stash list` para 
+listar aqueles arquivos que já estão presentes ali. 
+
+Para remover o que colocamos no stash podemos usar o `git stash apply` ou `git stash pop`.
+Entretanto, usando o apply uma cópia do nosso arquivo ainda ficará presente dentro do 'esconderijo',
+sendo assim, se quisermos apagar completamente de dentro da área do stash devemos então usar o
+`git stash drop` para apagar suas modificações da lista do stash.
 
 
 ### Repositórios do Git
@@ -164,3 +170,7 @@ já faz também o merge.
 ### git reset
 
 ### git rebase
+
+### git reflog
+
+### git cherry-pick
