@@ -1,6 +1,6 @@
 ## Python
 
-### Porque python?
+### Porque Python?
 
 Escolhi python como minha primeira linguagem de programação, porque é simples de escrever como PHP, porém mais versátil, e
 também nos da acesso a questões complexas que estão presentes em outras linguagens como C++, de uma forma mais acessível.
@@ -21,7 +21,7 @@ estruturas de repetições e contruções de classes.
 
 ---
 
-### Estrutura de Seleção
+### Estruturas de Seleção
 
 #### if, elif, else
 
@@ -37,32 +37,74 @@ e quando temos mais uma seleção com comportamentos diferentes usamos o elif  e
 
 ---
 
-### Estrutura de Repetição
+### Estruturas de Repetição
 
 #### while
 
-O while é uma estrutura de repetição. Muito parecida com o if, que verifica as condições dos seus argumentos e executa caso seja verdadeiro. A diferença está na quantidade de repetição, pois o if executa a ação uma vez, e o while executará a sua ação enquanto os seus argumentos forem True e so terá a sua repetição interrompida caso sua condição mude.
+O while é uma estrutura de repetição, o que chamamos de loop, equivalente a "enquanto".
+O while é a estrutura que usamos quando buscamos algo para interar sobre uma estrutura de seleção`(if, elif, else)`.
+Isso significa que vamos usar o while e o seu laço irá se repetir até que o estado seja alterado ou seja, enquanto
+uma afirmação seja equivalente a um `True` teremos uma repetição até que esse estado se altere para um `False`.
 
 #### for
 
-O for é mais uma condição de repetição do python, junto com o while. Porém, o for é mais usado em casos de interação com listas ou ranges.
+O for é mais uma condição de repetição do python, que chamamos de loop, assim como o while.
+Porém, o for é usado em casos de interações, tudo que possui uma range como `strings`, `listas`, `tuplas`,
+e outras estruturas que possam  fornecer a sua extensão como "contador" para a repetição.
 
-            for<argumento> in <lista>:
-                .....
+ex:
 
-Nesse caso temos a condição de repetição que são os elementos da lista, enquanto houver esses elementos o for será executado e será interrompido caso esses elementos termine.
+    palavra = 'coisa'
+    lista = [1, 2, 3, 4, 5]
+
+    for letra in palavra:
+        print(letra)
+
+
+    for numero in lista:
+        print(numero)
 
 ---
 
-### Tipos de Dados
+### Estruturas de Dados
 
-### Str
+### Listas
 
-Em python, uma entrada pode ser feita de algumas formas diferentes. Falando especificamente de Str,
-esse que é uma sequencia de caractere, ou menor parcela de um texto.
+Uma lista ou list como é conhecida, e um conjunto de dados colocados entre colchetes.
+A classe lista do python possui vários métodos para ser usado, que nos permite alterar a lista,
+por isso dizemos que é mutável.
+
+ex:
+
+    lista_de_metodos_da_lista = [append(), extend(), insert(), remove(), pop(), clear(), count(), sort(), reverse(), copy()]
+
+Quando definimos uma lista, estamos indexando os seus valores, isso significa que podemos acessar seus elementos
+através da sua posição `lista_de_metodos_da_lista[0]` isso seria o mesmo que acessar o método `append()`.
+
+### *Args
+
+### Dicionarios
+
+Os dicionários em python é um tipo de sequência que associa objeto. Dfinida por chaves {} e associada por dois pontos.
+
+    {1 : 'cachorro', 2 : 'gato'}
+
+### *Kwargs
+
+### Tuplas
+
+### Set
+
+---
+## Tipos de Dados
+
+### String(str)
+
+Em python, uma entrada pode ser feita de algumas formas diferentes. Falando especificamente de uma string,
+esse que é uma sequência de caractere, ou menor parcela de um texto.
 Usualmente, fazemos uma entrada em formato de str e caso seja conveniente a convertemos para outra forma.
 
-### Int
+### Inteiro(int)
 
 O int é uma classe usada para converter uma entrada em inteiro. Usamos o seu construtor para isso `int()`.
 Lembrando que essa função não arredonda numeros, faz somente a leitura dos dois primeiros algarismos presente.
@@ -72,16 +114,6 @@ Lembrando que essa função não arredonda numeros, faz somente a leitura dos do
 O float, também conhecido como ponto flutuante, assim como o int, é uma classe que usa o construtor `float()`
 e converte a sua entrada para uma forma decimal ou fracionada.
 
-### Listas
-
-Uma lista ou list como é conhecida, e um conjunto de caracteres que podem ser de tipos diferentes. Esses elementos sao colocados dentro de colchetes para formar uma lista.
-
-            ['fellipe', 10, 3,5]
-
-Quando definimos uma lista, estamos ordenando esses valores finitos. Quando definimos uma lista, seus elementos são o que chamamos de mutáveis, pois podem ser excluídos, adicionados e até desordenados. Podemos conter até mesmo listas dentro de listas o que chamamos de 'aninhar'.
-
----
-
 ### Variaveis
 
 O que chamamos de variáveis, são locais de memória usados para armazenar 'valores'.
@@ -89,6 +121,8 @@ Com base nos tipos de dados que estamos trabalhando, esses valores armazenados p
 Inteiro, decimais ou caracteres.
 Não é necessário uma complexa ferramenta na hora de fazer essas atribuições, usamos apenas o sinal de  '=',
 que no caso lemos como 'atribuição' ou 'recebe'.
+
+---
 
 ### Func
 
@@ -99,14 +133,6 @@ Func, é como conhecemos as funções em python. Uma função, possui uma 'synta
 
 Uma função é um bloco de código usado para realizar uma ação, reutilizando esses códigos de forma reduzida.
 excluindo a necessidade de reescrever todo o bloco a cada uso.
-
-
-
-### Dicionarios
-
-Os dicionários em python é um tipo de sequência que associa objeto. Dfinida por chaves {} e associada por dois pontos.
-
-            {1 : 'cachorro', 2 : 'gato'}
 
 ### Class
 
