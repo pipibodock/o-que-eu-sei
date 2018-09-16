@@ -48,9 +48,12 @@ uma afirmação seja equivalente a um `True` teremos uma repetição até que es
 
 #### for
 
-O for é mais uma condição de repetição do python, que chamamos de loop, assim como o while.
-Porém, o for é usado em casos de interações, tudo que possui uma range como `strings`, `listas`, `tuplas`,
-e outras estruturas que possam  fornecer a sua extensão como "contador" para a repetição.
+O for é mais uma condição de repetição do python, que chamamos de loop,
+assim como o while.
+Porém, o for é usado em casos de interações, tudo que possui uma range,
+ou que possua o elemento `iterável`, como `strings`, `listas`, `tuplas`,
+e outras estruturas que possam  fornecer a sua extensão como "contador" para a
+repetição.
 
 ex:
 
@@ -68,6 +71,16 @@ ex:
 
 ### Estruturas de Dados
 
+### Tuplas
+
+Tuplas em python são sequências de valores separados por vírgula. Podendo ser
+definida entre parênteses ou não. As tuplas podem ser aninhadas:
+
+    tupla = ((1, 2, 3), (3, 2, 1))
+
+O maior ponto a se destacar em uma tupla é que ela é imutável. Não conseguimos usar
+métodos para adicionar ou remover itens no nosso objeto.
+
 ### Listas
 
 Uma lista ou list como é conhecida, e um conjunto de dados colocados entre colchetes.
@@ -81,21 +94,47 @@ ex:
 Quando definimos uma lista, estamos indexando os seus valores, isso significa que podemos acessar seus elementos
 através da sua posição `lista_de_metodos_da_lista[0]` isso seria o mesmo que acessar o método `append()`.
 
-### *Args
-
 ### Dicionarios
 
-Os dicionários em python é um tipo de sequência que associa objeto. Dfinida por chaves {} e associada por dois pontos.
+O dicionário do python é outra estrutura de dado diferente na forma como é
+indexado. O dict, é uma estrutura indexada com `keys(chaves)`, que podem ser
+do tipo `int` ou `string`, o que nos deixa livres para escolhermos como acessar
+os nossos videos.
+No dic, temos o que chamamos de **key: value** definido entre **{}**.
 
+    {'nome': 'fellipe', 'idade': 29}
     {1 : 'cachorro', 2 : 'gato'}
 
-### *Kwargs
+### *Args
 
-### Tuplas
+Em python podemos usar uma estrutura chamada `*args`, que para início de tudo,
+não precisa se chamar args. Mas como assim? Significa que essa estrutura poderia
+se chamar `*coisa` ou `*aquilo` o importante é não faltar o `*`.
+Porque usamos args? O Args é útil quando precisamos passar argumentos,
+para uma função por exemplo, mas não sabemos quantos são ou quais são.
 
-### Set
+ex:
+
+    def soma_coisas(*args):
+        bolso = 0
+        for arg in args:
+            bolso += arg
+        return bolso
+
+Essa função é um exemplo onde poderiamos passar vários argumentos que ela ainda
+aceitará.
+
+### **Kwargs
+
+Em python também possuímos a estrutura conhecida como `kwargs`, mas assim como
+o nome **args**, **kwargs** não passa de uma convenção. Poderíamos chama-lo de
+qualquer nome, desde que não falte os `**` para defini-lo.
+
+Usamos o kwargs em situações em que desconhecemos a quantidade de
+**argumentos nomeados** que teremos de interagir.
 
 ---
+
 ## Tipos de Dados
 
 ### String(str)
@@ -133,6 +172,8 @@ Func, é como conhecemos as funções em python. Uma função, possui uma 'synta
 
 Uma função é um bloco de código usado para realizar uma ação, reutilizando esses códigos de forma reduzida.
 excluindo a necessidade de reescrever todo o bloco a cada uso.
+
+---
 
 ### Class
 
