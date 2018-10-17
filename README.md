@@ -36,3 +36,13 @@ forte ferramenta usada para o controle de versão e seus principais comandos.
 [Alguns caminhos de um profissional](https://github.com/pipibodock/o-que-eu-sei/tree/master/Profissoes) aqui estão algumas
 profissões e suas principais ferramentas de trabalho na área de TI e Desenvolvimento, com o intuito de clarear um pouco
 mais os caminhos dos recém chegados.
+
+## Complexidade de Algoritimo
+
+[Ordem de complexidade](https://github.com/pipibodock/o-que-eu-sei/tree/master/complexidade_de_algoritimo) Um breve texto
+de um breve estudo que pretendo aprofundar, de o que é uma complexidade e como se comporta um algorítimo.
+
+## Operadores Lógicos
+
+[Operadores Lógicos](https://github.com/pipibodock/o-que-eu-sei/tree/master/Operadores_logicos) Alguns conceitos
+sobre o que chamamos de operadores lógicos ou tabela da verdade.
