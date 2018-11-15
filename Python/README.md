@@ -37,6 +37,33 @@ e quando temos mais uma seleção com comportamentos diferentes usamos o elif  e
 
 ---
 
+### With
+
+O `with` é um tratamento que pode ser usado para fechar uma execução, assim quando fazemos:
+
+    with open("arquivo.txt", "w") as arquivo:
+        ...
+
+não precisamos dizer a execução para que ele abra o arquivo e depois de toda a execução do bloco ele se feche,
+porque isto já se encontra implito no tratamento `with`.
+
+
+Porém, ainda mais importante do que garantir esse fechamento com o método `close()` 'encapsulado' dentro do método
+há uma outra grande relevancia para se usar o `with`, que se asim podemos dizer, é *garantir a execução do bloco de código*.
+
+Quando dizemos "garantir a execução de código" estamos falando que de alguma forma, o nosso bloco de execução começara
+a ser executado, e caso encontre algum erro ou algum motivo para que a execução não seja efetuada do início ao fim, teremos
+a interrupção do bloco, de forma completa, sem prejuízo aos objetos do início. Essa 'alguma forma' que garante essa
+execução que estamos falando, na verdade são os métodos `__enter__()` e `__exit__()`.
+
+Em uma operação usando banco de dados por exemplo, ou citando uma transação bancária como exemplo, a nossa execução deve
+ser bem sucedida do início ao fim, caso isso não aconteça, devemos ter uma interrupção sem nenhum prejuízo ou efeito colateral.
+O método `__enter__()` garante que possamos começar toda essa execução e o método `__exit__(self, exc_type, exc_value, traceback)`
+recebe 2 parámetros que capturam qualquer tipo de `exception`, se esses parâmetros forem diferente de **None** interrompem
+o bloco de execução.
+
+---
+
 ### Estruturas de Repetição
 
 #### while
