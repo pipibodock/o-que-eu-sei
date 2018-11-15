@@ -45,11 +45,11 @@ O `with` é um tratamento que pode ser usado para fechar uma execução, assim q
         ...
 
 não precisamos dizer a execução para que ele abra o arquivo e depois de toda a execução do bloco ele se feche,
-porque isto já se encontra implito no tratamento `with`.
+porque isto já se encontra implicito no tratamento `with`.
 
 
 Porém, ainda mais importante do que garantir esse fechamento com o método `close()` 'encapsulado' dentro do método
-há uma outra grande relevancia para se usar o `with`, que se asim podemos dizer, é *garantir a execução do bloco de código*.
+há uma outra grande relevancia para se usar o `with`, que se assim podemos dizer, é *garantir a execução do bloco de código*.
 
 Quando dizemos "garantir a execução de código" estamos falando que de alguma forma, o nosso bloco de execução começara
 a ser executado, e caso encontre algum erro ou algum motivo para que a execução não seja efetuada do início ao fim, teremos
