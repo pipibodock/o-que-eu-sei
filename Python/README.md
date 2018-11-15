@@ -180,3 +180,53 @@ excluindo a necessidade de reescrever todo o bloco a cada uso.
 Criar uma class, ou objeto classe é compor esse objeto com atributos e métodos. atributos é como são conhecidos as variáveis dentro de uma classee métodos é como são chamadas as funções quando estão dentro de uma classe.
 
 Por convenção, usamos o parâmetro 'self' como obrigatório dentro dos metodos de uma classe.
+
+---
+
+### Módulo de requests do Python
+
+Como evidenciamos no título, o python possui um módulo que importamos com `import requests` que usamos
+para fazer requisições e instanciar o objeto response. Esse módulo presente no python é de fácil acesso,
+descomplicado na hora de fazermos as nossas requisições, e aceita parâmetros de diferentes maneiras para
+atingirmos o nosso objetivo.
+
+Alguns métodos usados pelo HTTP, são eles o `put`, `delete`, `head`, `options` e os mais comuns `GET` e `POST`.
+As requisições feitas pelo módulo requests, são simples, deixando claro como queremos fazer a nossa requisição:
+
+    response =  resquests.get('http://urlsquequeremos.com')
+
+Geralmente queremos mandar informações nas query strings de nossas url's, dessa forma, podemos usar um *dicionário*
+e passa-lo para o argumento `params`:
+
+    dicionario = {'agr1': 'coisa', 'arg2': 'boa'}
+    response = requests.get('http://urlquequeremos.com', params=dicionario)
+
+Além do argumento `params` outos argumentos são usados pelo módulo requests, que facilitam o nosso trabalho,
+alguns deles são:
+
+**data:**
+
+Passamos um dicionário para o parâmetro data quando queremos criar algum dado em forma de formulário, como fazemos
+no HTML. Usando esse parâmetro, os nossos dados colocados no dicionário já tomam a forma necessária para a requisição.
+
+**files:**
+
+Podemos usar o parâmetro `files` quando queremos enviar em nossas requisições algum objeto Multipart, podemos
+nomear esses arquivos ou também podemos passar em forma de string para que seja enviada em forma de arquivo.
+Tudo isso com grande facilidade.
+
+**cookies:**
+
+Através do parâmetro `cookies`, podemos passar os nossos próprios cookies para os servidores.
+
+Além de passarmos diferentes informações em nossas requisições, muitas vezes precisamos conferir qual tipo de informação
+que nos foi retornada. O objeto *Response* possui atributos com fácil acesso:
+
+    response = requests.get('http://algumaurldesejada.com')
+    response.url
+    response.text
+    response.encoding
+    response.content
+
+Chegamos a conclusão que o módulo requests é uma biblioteca do python eficiente que atende as nossas demandas.
+Fontee e informações completas: [Requests](https://media.readthedocs.org/pdf/requests-docs-pt/latest/requests-docs-pt.pdf)
