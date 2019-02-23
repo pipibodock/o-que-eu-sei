@@ -10,3 +10,4 @@ enorme quantidade de possibilidades na hora de criar e editar códigos e textos.
 
 Assim como configuramos nossas ferramentas do dia a dia o vim não é diferente.
 Temos o chamado VimRC, que é onde guardamos todas as configurações do Vim.
+O vimrc é um arquivo oculto `.vimrc` que normalmente criamos na Home.
